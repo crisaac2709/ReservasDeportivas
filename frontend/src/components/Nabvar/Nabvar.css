@@ -1,0 +1,87 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0077cc;
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: #cceeff;
+}
+
+.navbar-user {
+  font-weight: bold;
+  font-size: 14px;
+  color: #d9faff;
+}
+
+.btn-logout {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-logout:hover {
+  background-color: #c62828;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .navbar-links li {
+    width: 100%;
+  }
+
+  .navbar-links li a,
+  .btn-logout {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}

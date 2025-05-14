@@ -1,0 +1,21 @@
+.registro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.registro-container h1 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #0077cc;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+}

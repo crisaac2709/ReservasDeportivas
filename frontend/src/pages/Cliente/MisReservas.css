@@ -1,0 +1,33 @@
+.mis-reservas-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.reserva-card {
+  background: #fff;
+  border-left: 5px solid #007bff;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.reserva-card.aceptado {
+  border-left-color: #28a745;
+}
+
+.reserva-card.rechazado {
+  border-left-color: #dc3545;
+}
+
+.estado {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+h2 {
+  margin: 2rem;  
+  text-align: center;
+  font-size: 2rem;
+}
