@@ -1,0 +1,87 @@
+[
+  {
+    "id": "df380d1b-886d-4f09-908a-2b24a0bb6d66",
+    "nombres": "Kory",
+    "apellidos": "Chang",
+    "cedula": "0956457812",
+    "telefono": "0990216833",
+    "email": "kory@gmail.com",
+    "fecha": "10-10-2025",
+    "categoria": "Clase de Yoga"
+  },
+  {
+    "id": "b4f159f1-442f-4f5f-8979-cf6ec670dd17",
+    "nombres": "Kike",
+    "apellidos": "Garcia",
+    "cedula": "0945127845",
+    "telefono": "0912457845",
+    "email": "kike@gmail.com",
+    "fecha": "20-10-2025",
+    "categoria": "Clase de Boxeo"
+  },
+  {
+    "id": "6f0007d0-adae-42e4-b942-8ab0431fbbd0",
+    "nombres": "Michael",
+    "apellidos": "Isaac",
+    "cedula": "0957983655",
+    "telefono": "0980156190",
+    "email": "crisaac2002@gmail.com",
+    "fecha": "2025-05-14",
+    "categoria": "Boxeo"
+  },
+  {
+    "id": "4c25721e-f84c-4b6e-8c6d-24010786bbb0",
+    "nombres": "Daniela Romina",
+    "apellidos": "Lopez Cedeño",
+    "cedula": "0945856321",
+    "telefono": "0952365874",
+    "email": "dani.lopez@gmail.com",
+    "fecha": "2025-06-05",
+    "categoria": "Tenis"
+  },
+  {
+    "id": "0b931313-85a2-4488-b64e-f75c4c7a6d58",
+    "idCliente": "21b28852-9638-41f8-be22-7a91a07669d4",
+    "fecha": "2025-05-14",
+    "hora": "12:00",
+    "categoria": "Boxeo",
+    "entrenador": "c5605c56-549f-4d14-831f-d74f17a8a80d",
+    "estado": "aceptado"
+  },
+  {
+    "id": "418824a5-c60a-4ee7-93e9-5a77eedc45fc",
+    "idCliente": "21b28852-9638-41f8-be22-7a91a07669d4",
+    "fecha": "2025-05-14",
+    "hora": "12:00",
+    "categoria": "CrossFit",
+    "entrenador": "c5605c56-549f-4d14-831f-d74f17a8a80d",
+    "estado": "rechazado"
+  },
+  {
+    "id": "152086b9-c393-4f32-9479-e622ae9f6989",
+    "idCliente": "3cff6246-03e8-433c-92f8-b50ad9514ff9",
+    "fecha": "2025-05-16",
+    "hora": "16:00",
+    "categoria": "Tenis",
+    "entrenador": "c5605c56-549f-4d14-831f-d74f17a8a80d",
+    "estado": "pendiente"
+  },
+  {
+    "id": "2ab6931d-e5e0-4638-a8c0-493dbee1b7ee",
+    "idCliente": "21b28852-9638-41f8-be22-7a91a07669d4",
+    "fecha": "2025-10-20",
+    "hora": "08:00",
+    "categoria": "Yoga",
+    "entrenador": "dd7221ba-0a80-4503-9090-b20d7d9f8593",
+    "estado": "aceptado"
+  },
+  {
+    "id": "908e73f3-a9b3-4795-8443-826e74ed777b",
+    "idCliente": "21b28852-9638-41f8-be22-7a91a07669d4",
+    "fecha": "2025-10-06",
+    "hora": "19:00",
+    "categoria": "Tenis",
+    "entrenador": "dd7221ba-0a80-4503-9090-b20d7d9f8593",
+    "estado": "aceptado"
+  }
+]

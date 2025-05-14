@@ -1,0 +1,18 @@
+[
+    {
+        "id" : 1,
+        "nombre" : "Tenis"
+    },
+    {
+        "id" : 2,
+        "nombre" : "Boxeo"
+    },
+    {
+        "id" : 3,
+        "nombre" : "Crossfit"
+    },
+    {
+        "id" : 4,
+        "nombre" : "Tenis"
+    }
+]

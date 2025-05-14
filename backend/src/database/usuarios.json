@@ -1,0 +1,56 @@
+[
+  {
+    "id": "c5605c56-549f-4d14-831f-d74f17a8a80d",
+    "nombres": "Danny",
+    "apellidos": "Matute Naranjo",
+    "username": "danny2002",
+    "email": "danny_matute@gmail.com",
+    "password": "$2b$10$TWnr0L41yk6f4D44Cs.7K.nah0grpx2q8IIeseEPAz4Mpsst1T5fq",
+    "rol": "Entrenador"
+  },
+  {
+    "id": "16a436aa-2cff-4601-9e9f-efebd454c3b5",
+    "nombres": "Jordy",
+    "apellidos": "Robles Morocho",
+    "username": "jordy2002",
+    "email": "jordy2002@gmail.com",
+    "password": "$2b$10$nS7FAt8eDpdOziw768zajOsJd0VQkmt70G5Q7DLi6hkaNuKYSpVKC",
+    "rol": "Cliente"
+  },
+  {
+    "id": "21b28852-9638-41f8-be22-7a91a07669d4",
+    "nombres": "Kailani",
+    "apellidos": "Oña Bueno",
+    "email": "kailani@gmail.com",
+    "telefono": "0956123456",
+    "password": "$2b$10$KA17xwK0yT3RtEQWEnbvcOdFDTN5iObPBPyhWidMSrASVYKaZko2e",
+    "rol": "Cliente"
+  },
+  {
+    "id": "38c542d6-ab2a-4d82-96db-fa1ec7e5fa1b",
+    "nombres": "Cristian Isaac",
+    "apellidos": "Alvarez Oña",
+    "email": "cristian@gmail.com",
+    "telefono": "0980156190",
+    "password": "$2b$10$Sbmn58FmCvWS.5kA76d5SuQJkP1Ja9z9/AZ1c.gLPHnn7eZPQ2PAy",
+    "rol": "Cliente"
+  },
+  {
+    "id": "3cff6246-03e8-433c-92f8-b50ad9514ff9",
+    "nombres": "Cristian Isaac",
+    "apellidos": "Alvarez Oña",
+    "email": "crisael@gmail.com",
+    "telefono": "0980156190",
+    "password": "$2b$10$c99BWnwU6X8sCvCr9xsLw.F/DjRwepVsvm35flvuAfZMEOF2uBsOO",
+    "rol": "Cliente"
+  },
+  {
+    "id": "dd7221ba-0a80-4503-9090-b20d7d9f8593",
+    "nombres": "Bryan ",
+    "apellidos": "Flor Esparza",
+    "email": "flor@gmail.com",
+    "telefono": "0985412563",
+    "password": "$2b$10$9.bTzrWpd53LXheru44.i.8N/nfHk6mWEn8VZ0Km5TD9iBEGZ6M06",
+    "rol": "Entrenador"
+  }
+]

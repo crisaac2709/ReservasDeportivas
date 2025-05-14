@@ -1,0 +1,5 @@
+# Ignorar node_modules y archivos sensibles
+backend/node_modules
+frontend/node_modules
+*.log
+.env
