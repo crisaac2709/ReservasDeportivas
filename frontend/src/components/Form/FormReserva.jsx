@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import {InputField} from "../Input/InputField"
-
+import {Modal} from "../Modals/Modal"
 import "./FormReserva.css";
 
 export const FormReserva = () => {
@@ -12,8 +12,10 @@ export const FormReserva = () => {
     entrenador: ""
   });
 
+  const [mostrarModal, setMostrarModal] = useState(false);
   const [errores, setErrores] = useState({});
   const [entrenadores, setEntrenadores] = useState([]);
+    const [deportes, setDeportes] = useState([]);
 
   useEffect(() => {
     // Cargar entrenadores disponibles desde JSON
@@ -23,12 +25,24 @@ export const FormReserva = () => {
         setEntrenadores(entrenadores);
       })
       .catch((err) => console.error("Error al cargar entrenadores", err));
+
+    
+      // Cargar deportes
+    axios.get("http://localhost:4000/api/deportes")
+      .then((res) => {
+        const deportes = res.data
+        setDeportes(deportes)
+      })
+      .catch((err) => console.error("Error al cargar deportes"))
   }, []);
+
+
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  
   const validar = () => {
     const errores = {};
     const hoy = new Date().toISOString().split("T")[0];
@@ -73,7 +87,7 @@ export const FormReserva = () => {
 
       try {
         const res = await axios.post("http://localhost:4000/api/reservas", nuevaReserva);
-        alert("Reserva registrada exitosamente ✅");
+        setMostrarModal(true)
         setForm({ fecha: "", hora: "", categoria: "", entrenador: "" });
         window.location.href = "/mis-reservas"
       } catch (error) {
@@ -88,6 +102,7 @@ export const FormReserva = () => {
   };
 
    return (
+    <>
     <form onSubmit={handleSubmit} className="formulario-reserva">
       <h2>Reserva tu Clase</h2>
       
@@ -126,10 +141,12 @@ export const FormReserva = () => {
           className={`input-campo select-custom ${errores.categoria ? 'input-campo-error' : ''}`}
         >
           <option value="">Selecciona una categoría</option>
-          <option value="Yoga">Yoga</option>
-          <option value="Boxeo">Boxeo</option>
-          <option value="CrossFit">CrossFit</option>
-          <option value="Tenis">Tenis</option>
+          {deportes.map((dep) => (
+          <option key={dep.id} value={dep.nombre}>
+            {dep.nombre}
+          </option>
+          ))}
+
         </select>
         {errores.categoria && <span className="error-mensaje">{errores.categoria}</span>}
       </div>
@@ -156,5 +173,13 @@ export const FormReserva = () => {
         Reservar Clase
       </button>
     </form>
+
+    <Modal
+      mensaje="Reserva registrada exitosamente ✅"
+      visible={mostrarModal}
+      onClose={() => setMostrarModal(false)}
+    />
+
+    </>
   );
 };

@@ -64,7 +64,7 @@
     "hora": "16:00",
     "categoria": "Tenis",
     "entrenador": "c5605c56-549f-4d14-831f-d74f17a8a80d",
-    "estado": "pendiente"
+    "estado": "aceptado"
   },
   {
     "id": "2ab6931d-e5e0-4638-a8c0-493dbee1b7ee",
@@ -82,6 +82,42 @@
     "hora": "19:00",
     "categoria": "Tenis",
     "entrenador": "dd7221ba-0a80-4503-9090-b20d7d9f8593",
+    "estado": "aceptado"
+  },
+  {
+    "id": "a04b9bec-f7bc-4e85-bd12-1092146eed7d",
+    "idCliente": "21b28852-9638-41f8-be22-7a91a07669d4",
+    "fecha": "2025-05-17",
+    "hora": "14:15",
+    "categoria": "Yoga",
+    "entrenador": "dd7221ba-0a80-4503-9090-b20d7d9f8593",
+    "estado": "aceptado"
+  },
+  {
+    "id": "ba8584bf-a411-47f1-bda2-7c644e7c1e6b",
+    "idCliente": "21b28852-9638-41f8-be22-7a91a07669d4",
+    "fecha": "2025-05-20",
+    "hora": "10:00",
+    "categoria": "Yoga",
+    "entrenador": "c5605c56-549f-4d14-831f-d74f17a8a80d",
+    "estado": "rechazado"
+  },
+  {
+    "id": "c38da1ca-dabc-48ed-9541-ddb56b5f0f82",
+    "idCliente": "21b28852-9638-41f8-be22-7a91a07669d4",
+    "fecha": "2025-10-20",
+    "hora": "20:00",
+    "categoria": "Boxeo",
+    "entrenador": "dd7221ba-0a80-4503-9090-b20d7d9f8593",
+    "estado": "pendiente"
+  },
+  {
+    "id": "bfc33f8f-d4b6-4306-a264-2d4616878add",
+    "idCliente": "21b28852-9638-41f8-be22-7a91a07669d4",
+    "fecha": "2025-10-30",
+    "hora": "10:00",
+    "categoria": "Atletismo",
+    "entrenador": "c5605c56-549f-4d14-831f-d74f17a8a80d",
     "estado": "aceptado"
   }
 ]

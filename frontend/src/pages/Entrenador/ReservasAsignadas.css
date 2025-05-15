@@ -1,7 +1,9 @@
 .asignadas-container {
-  max-width: 800px;
+  width: 100%;
   margin: auto;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .reserva-card {
@@ -9,7 +11,7 @@
   border-left: 5px solid #007bff;
   border-radius: 10px;
   padding: 16px;
-  margin-bottom: 16px;
+  margin: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 

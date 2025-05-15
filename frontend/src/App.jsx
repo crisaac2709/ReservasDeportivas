@@ -18,11 +18,8 @@ function App() {
       <Navbar />
       <Routes>
         {/* Ruta principal redirige al login si no está autenticado */}
-        <Route path="/" element={
-          isAutenticado
-            ? <Home />
-            : <Navigate to="/login" replace />
-        } />
+        <Route path="/" element={<Home />} />
+
 
         {/* Solo CLIENTE puede reservar o ver sus reservas */}
         <Route path="/registrar-reserva" element={isCliente ? <RegistrarReserva /> : <p>Acceso denegado</p>} />

@@ -1,7 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
-import "./Login.css"
 import { useNavigate } from "react-router-dom";
+import { InputField } from "../../components/Input/InputField";
+import "./Login.css"
+
 
 export const LoginUsuario = () => {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -40,11 +42,11 @@ export const LoginUsuario = () => {
         <h2>Iniciar Sesión</h2>
         
         <div className="input-group">
-          <label htmlFor="email">Correo Electrónico</label>
-          <input
-            type="email"
+          <InputField
+            label={"Correo Electronico"}
+            type={"email"}
             id="email"
-            name="email"
+            name={"email"}
             className="login-input"
             placeholder="tu@email.com"
             value={form.email}
@@ -54,11 +56,10 @@ export const LoginUsuario = () => {
         </div>
         
         <div className="input-group">
-          <label htmlFor="password">Contraseña</label>
-          <input
-            type="password"
+          <InputField
+            type={"password"}
             id="password"
-            name="password"
+            name={"password"}
             className="login-input"
             placeholder="••••••••"
             value={form.password}
@@ -86,7 +87,7 @@ export const LoginUsuario = () => {
         <div className="login-links">
           <a href="/registrar-usuario">¿No tienes cuenta? Regístrate</a>
           <br />
-          <a href="/recuperar-contrasena">¿Olvidaste tu contraseña?</a>
+          {/*<a href="/recuperar-contrasena">¿Olvidaste tu contraseña?</a>*/}
         </div>
       </form>
     </div>

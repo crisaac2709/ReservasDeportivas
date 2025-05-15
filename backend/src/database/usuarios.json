@@ -52,5 +52,14 @@
     "telefono": "0985412563",
     "password": "$2b$10$9.bTzrWpd53LXheru44.i.8N/nfHk6mWEn8VZ0Km5TD9iBEGZ6M06",
     "rol": "Entrenador"
+  },
+  {
+    "id": "cd7448aa-852a-466f-bf6f-233cbf2e7f0c",
+    "nombres": "Isaac",
+    "apellidos": "Alvarez",
+    "email": "isaac@gmail.com",
+    "telefono": "0956981666",
+    "password": "$2b$10$2v3Y.pWBOgmMuWghGm8kC.Kb/GuhUs1r6R44rBnwS/X8l8NZsYN0.",
+    "rol": "Cliente"
   }
 ]

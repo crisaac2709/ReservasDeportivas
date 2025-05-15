@@ -18,7 +18,15 @@ export const ReservasAsignadas = () => {
         const resUsuarios = await axios.get("http://localhost:4000/api/auth/usuarios");
 
         const mias = resReservas.data.filter(r => r.entrenador === usuario.id);
-        setReservas(mias);
+
+        // Ordenar para que las pendientes aparezcan primero
+        const ordenadas = mias.sort((a, b) => {
+          if (a.estado === "pendiente" && b.estado !== "pendiente") return -1;
+          if (a.estado !== "pendiente" && b.estado === "pendiente") return 1;
+          return 0;
+        });
+
+        setReservas(ordenadas);
         setUsuarios(resUsuarios.data);
       } catch (err) {
         console.error("Error al cargar reservas o usuarios:", err);
@@ -50,21 +58,24 @@ export const ReservasAsignadas = () => {
   };
 
   return (
-    <div className="asignadas-container">
+    <>
       <h2>Reservas Asignadas</h2>
-      {reservas.length === 0 ? (
-        <p>No tienes reservas asignadas aún.</p>
-      ) : (
-        reservas.map(reserva => (
-          <ReservaCard
-            key={reserva.id}
-            reserva={reserva}
-            cliente={obtenerNombreCliente(reserva.idCliente)}
-            onAceptar={() => actualizarEstado(reserva.id, "aceptado")}
-            onRechazar={() => actualizarEstado(reserva.id, "rechazado")}
+
+      <div className="asignadas-container">
+        {reservas.length === 0 ? (
+          <p>No tienes reservas asignadas aún.</p>
+        ) : (
+          reservas.map(reserva => (
+            <ReservaCard
+              key={reserva.id}
+              reserva={reserva}
+              cliente={obtenerNombreCliente(reserva.idCliente)}
+              onAceptar={() => actualizarEstado(reserva.id, "aceptado")}
+              onRechazar={() => actualizarEstado(reserva.id, "rechazado")}
             />
-        ))
-      )}
-    </div>
+          ))
+        )}
+      </div>
+    </>
   );
 };

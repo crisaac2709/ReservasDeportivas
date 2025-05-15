@@ -14,5 +14,21 @@
     {
         "id" : 4,
         "nombre" : "Tenis"
+    },
+    {
+        "id": 5,
+        "nombre": "Ajedrez"
+    },
+    {
+        "id": 6,
+        "nombre" : "Atletismo"
+    },
+    {
+        "id" : 7,
+        "nombre" : "Natacion"
+    },
+    {
+        "id" : 8,
+        "nombre" : "Tiro con Arco"
     }
 ]
